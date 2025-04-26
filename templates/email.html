@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+{% block content  %}
+        <div class="generator-container">
+            <div class="options-panel">
+                
+                <div class="option-card active" >
+                    <div class="option-header">
+                        <div class="option-icon">✉️</div>
+                        <div class="option-title">Email</div>
+                    </div>
+                    <form method="POST">
+                        <div class="option-content">
+                            <div class="form-group">
+                                <label for="email-address">Email Address</label>
+                                <input type="email" name="email" placeholder="recipient@example.com">
+                            <button type="submit" id="generate-btn" class="btn">Generate QR Code</button>
+                            </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+     </div>
+     {% endblock  %}

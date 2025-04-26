@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="generator-container">
+            <div class="options-panel">
+                <!-- WiFi Option -->
+                <form method="POST">
+                <div class="option-card active" >
+                    <div class="option-header">
+                        <div class="option-icon">📞</div>
+                        <div class="option-title">Phone Number</div>
+                    </div>
+                    <div class="option-content">
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone_number" placeholder="+1234567890">
+                        </div>
+                
+                    <button type="submit" id="generate-btn" class="btn">Generate QR Code</button>
+                    </div>
+                </div>
+                
+                </div>
+                </form>
+            </div>
+        </div>
+        
+{% endblock  %}

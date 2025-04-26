@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Maker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QR Code Maker</h1>
+            <p class="subtitle">Create custom QR codes for various purposes</p>
+        </header>
+
+      {% block content %}
+
+      {% endblock %}
+        
+        <footer>
+            <p>© 2025 QR Code Maker. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "base.html" %} 
+
+{% block content %}
+                
+                <!-- WiFi Option -->
+                
+                <div class="option-card active" >
+                    <form method="POST">
+                    <div class="option-header">
+                        <div class="option-icon">📶</div>
+                        <div class="option-title">Wifi SSID and Password</div>
+                    </div>
+                    <div class="option-content">
+                        <p class="option-description">Instantly connect to a password protected Wifi network.</p>
+                        <div class="form-group">
+                            <label for="wifi-ssid">Network Name (SSID)</label>
+                            <input type="text" name="ssid" placeholder="Your WiFi network name">
+                        </div>
+                        <div class="form-group">
+                            <label for="wifi-password">Password</label>
+                            <input type="text" name="password" placeholder="Your WiFi password">
+                        </div>
+                        <div class="form-group">
+                            <label for="wifi-security">Security Type</label>
+                            <select name="security">
+                                <option value="WPA">WPA/WPA2</option>
+                                <option value="WEP">WEP</option>
+                                <option value="">No encryption</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Hidden Network</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="hidden" value="false" checked>
+                                    No
+                                </label>
+                                <label>
+                                    <input type="radio" name="hidden" value="true">
+                                    Yes
+                                </label>
+                            </div>
+                        </div>
+                          <button type="submit" id="generate-btn" class="btn">Generate QR Code</button>
+                    </div>
+                     </form>
+                </div>
+
+                </div>
+               
+{% endblock  %}

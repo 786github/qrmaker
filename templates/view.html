@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+        <div class="generator-container">
+            <div class="preview-panel">
+                <h2>Your QR Code</h2>
+                <div class="qr-display" >
+                <img src="data:image/png;base64,{{ qr_image }}" alt="WiFi QR Code">
+                </div>
+                <button class="btn"> <a href="{{ url_for('download', data=data|urlencode) }}">Download PNG</a> </button>
+<br><br>
+                <button class="btn"> <a href="{{ url_for('index') }}" class="back-btn">Create Another</a></button>
+            </div>
+        </div>
+        
+{% endblock  %}       

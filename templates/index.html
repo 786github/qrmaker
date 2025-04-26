@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+
+{% block content %}
+        <div class="generator-container">
+            <div class="options-panel">
+                <h2>Choose a type of QR Code</h2>
+                
+                <!-- WiFi Option -->
+                <div class="option-card active" id="wifi-option">
+                    <div class="option-header">
+                        <div class="option-icon">📶</div>
+                        <div class="option-title"><a href="{{url_for('wifi')}}">Wifi SSID and Password</a></div>
+                    </div>
+                </div>
+                
+                <!-- Website Option -->
+                <div class="option-card" id="website-option">
+                    <div class="option-header">
+                        <div class="option-icon">🌐</div>
+                        <div class="option-title"><a href="{{ url_for('web')}}">Web Address or App Store</a></div>
+                    </div>
+
+                </div>
+                
+                <!-- Email Option -->
+                <div class="option-card" id="email-option">
+                    <div class="option-header">
+                        <div class="option-icon">✉️</div>
+                        <div class="option-title"><a href="{{url_for('email')}}">Email</a></div>
+                    </div>
+
+                </div>
+                
+                <!-- Phone Option -->
+                <div class="option-card" id="phone-option">
+                    <div class="option-header">
+                        <div class="option-icon">📞</div>
+                        <div class="option-title"><a href="{{url_for('phone')}}">Phone Number</a></div>
+                    </div>
+
+                </div>
+                
+                <!-- Contact Option -->
+                <div class="option-card" id="contact-option">
+                    <div class="option-header">
+                        <div class="option-icon">👤</div>
+                        <div class="option-title"><a href="{{url_for('card')}}">Business Card (full contacts)</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+{%endblock %}

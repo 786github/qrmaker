@@ -1,0 +1,50 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+        <div class="generator-container">
+            <div class="options-panel">
+                 
+                
+                <!-- WiFi Option -->
+                <form method="POST">
+                <div class="option-card active" >
+                    <div class="option-header">
+                        <div class="option-icon">✉️</div>
+                        <div class="option-title">Card</div>
+                    </div>
+                    <div class="option-content">
+                        <p class="option-description">Including name, address, phone, etc.</p>
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" name="name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" name="phone" placeholder="+1234567890">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-org">Organization</label>
+                            <input type="text" name="org" placeholder="Company Inc.">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-address">Address</label>
+                            <textarea name="address" placeholder="123 Street, City, Country"></textarea>
+                        </div>
+                        <button type="submit" id="generate-btn" class="btn">Generate QR Code</button>
+                    </div>
+                </div>
+                </form>
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+
+{% endblock %}

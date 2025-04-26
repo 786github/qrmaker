@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+
+    {% block content %}            
+                
+                <!-- WiFi Option -->
+                
+                <div class="option-card active" >
+                    <form method="POST">
+                    <div class="option-header">
+                        <div class="option-icon">🌐</div>
+                        <div class="option-title">Web Address or App Store</div>
+                    </div>
+                        <div class="option-content">
+                        <p class="option-description">Open the phone to a web page or app store.</p>
+                        <div class="form-group">
+                            <label for="website-url">URL</label>
+                            <input type="url" id="url" name="url" placeholder="https://example.com">
+                        </div>
+                        <button type="submit" id="generate-btn" class="btn">Generate QR Code</button>
+                    </div>
+                     </form>
+                </div>
+
+                </div>
+    {% endblock %}
+
+        
